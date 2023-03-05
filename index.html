@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>Formulario de pesquisa</title>
+  <link rel="stylesheet" href="styles.css">
+  </head>
+  <body>
+    <div class="fundo">
+    <h1 id="title">Formulario de pesquisa</h1>
+    <p id="description">Sobre trabalho remoto</p>
+    <form id="survey-form">
+    <fieldset>    
+    <label id="name-label">Nome: <input id="name" name="name" type="text" placeholder="informe o seu nome"required /></label>
+    <label id="email-label">Email: <input id="email" name="email" type="email" placeholder="Informe seu e-mail" required /></label>
+   <label id="number-label">Idade: <input id="number" name="number" type="number" placeholder="Idade" min="12" max="120" required /></label>
+      </fieldset>
+       <fieldset> 
+         <label>Você esta trabalhando atualmente?
+        <select id="dropdown">
+            <option value="1">Sim</option>
+            <option value="2">Não</option>
+        </select> 
+        </fieldset> 
+          <fieldset>
+            <label>Você tem internet na sua casa?  
+        <label><input type="radio" value="yes" name="yes-no" checked>Sim</label>
+        <label><input type="radio" value="no" name="yes-no" >Não</label>
+        </fieldset>
+          <fieldset>
+            <label>Você tem computador ou celular?
+        <label><input type="checkbox" value="check1" checked>Computador</label>
+        <label><input type="checkbox" value="check2">Celular</label>
+        </fieldset>
+        <label>Informe sobre a sua situação:
+                <textarea id="mensagem" name="mensagem" rows="3" cols="40"
+                    placeholder="Informe sobre a sua situação..."></textarea>
+         <input id="submit" type="submit" button="submit" >
+    </form>
+    </div>
+  </body>
+
+  </html>
